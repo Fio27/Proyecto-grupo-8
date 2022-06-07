@@ -1,0 +1,75 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 6, 2022, 11:24:51 AM
+    Author     : Fio
+*/
+
+.content h1{
+    font-size: 30px;
+    font-weight: 100; 
+    margin-top: 10px; 
+    color:darkgoldenrod; 
+}
+
+.content h2{
+    font-size: 20px;
+    font-weight: 100; 
+    margin-top: 10px;  
+}
+
+.content p{
+    font-size: 12px; 
+    color:blueviolet; 
+}
+
+.feature-img{
+    height: 30%;
+    position: absolute;
+    bottom: 245px;
+    right: 1096px; 
+       
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.navbar{
+height: 15vh;
+width:100%;
+margin: auto; 
+display:flex;
+align-items: center;
+}
+
+.apart{
+    margin-top: 200px; 
+    font-size: 12px; 
+}
+
+.compra h4{
+   margin-top: 8px; 
+   font-size: 15px; 
+   color:blueviolet;  
+}
+
+.third-one{
+    height: 30%;
+    position: absolute;
+    bottom: 0px;
+    right: 1096px; 
+}
+
+.another h3{
+   margin-top: 204px; 
+   font-size: 15px; 
+}
+
+.compras h4{
+   margin-top: 8px; 
+   font-size: 15px; 
+   color:blueviolet;  
+}
