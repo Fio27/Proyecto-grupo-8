@@ -1,28 +1,24 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : Jun 6, 2022, 11:24:51 AM
-    Author     : Fio
-*/
 
 .content h1{
     font-size: 30px;
     font-weight: 100; 
     margin-top: 10px; 
     color:darkgoldenrod; 
+    text-align: center
 }
 
 .content h2{
     font-size: 20px;
     font-weight: 100; 
-    margin-top: 10px;  
+    margin-top: 10px; 
+    text-align: center
+    
 }
 
 .content p{
     font-size: 12px; 
     color:blueviolet; 
+     text-align: center;
 }
 
 .feature-img{
@@ -30,11 +26,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     position: absolute;
     bottom: 245px;
     right: 1096px; 
+   align-items:center;
        
 }
 .logo{
     width: 140px;
     cursor: pointer;
+    text-align: center;
 }
 
 .navbar{
@@ -43,17 +41,20 @@ width:100%;
 margin: auto; 
 display:flex;
 align-items: center;
+ text-align: center;
 }
 
 .apart{
     margin-top: 200px; 
     font-size: 12px; 
+    text-align: center;
 }
 
 .compra h4{
    margin-top: 8px; 
    font-size: 15px; 
    color:blueviolet;  
+   text-align: center;
 }
 
 .third-one{
@@ -61,15 +62,45 @@ align-items: center;
     position: absolute;
     bottom: 0px;
     right: 1096px; 
+    align-items:center;
 }
 
 .another h3{
    margin-top: 204px; 
    font-size: 15px; 
+   text-align: center;
 }
 
 .compras h4{
    margin-top: 8px; 
    font-size: 15px; 
    color:blueviolet;  
+    text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: darkblue;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
