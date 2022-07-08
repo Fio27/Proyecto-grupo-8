@@ -17,7 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     position:absolute;
 }
 
-/*h1{
+h1{
     /titulo: Login/
 
     font-size: 35px;
@@ -26,7 +26,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     color: white;
     text-align:center;
     background-color: darkgoldenrod;
-}*/
+}
 
 
 
@@ -49,27 +49,27 @@ nav ul li{
     list-style: none;
     margin: 0px 50px;
 }
-/*nav ul li a{
-    color letras home, login y cine
+nav ul li a{
+    /*color letras home, login y cine*/
     text-decoration: none;
     color: yellow;
 
-}  */
+}  
 
 
-/*.images-content img{
+.images-content img{
     width: 500px;
     height: 700px;
     object-fit: cover;
 
-} */
+} 
 
-/*.images-content{
+.images-content{
     margin: 30px 0;
     display:flex;
     justify-content: space-around;
     aling-items:center;
-}*/
+}
 
 * {
     box-sizing: border-box;
