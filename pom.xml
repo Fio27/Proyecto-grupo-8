@@ -11,7 +11,7 @@
     <groupId>com.proyecto</groupId>
     <artifactId>proyecto</artifactId>
     <version>1</version>
-    <name>proyecto</name>
+    <name>proyectoOriginal</name>
     <description>Proyecto grupo 8</description>
     <properties>
         <java.version>18</java.version>
