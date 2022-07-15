@@ -42,14 +42,14 @@ nav ul li a{
 .content p{
     font-size: 20px;
     color: midnightblue;
-    text-align: center;
+    text-align: left;
 }
 .logo {
     width: 160px;
     cursor: pointer;
 }
 .tikcets {
-    width: 1000px;
+    width: 100px;
     display:block;
     margin:auto;
 }
@@ -81,4 +81,11 @@ body {
     color: black;
 }
 
-
+.message{
+    height: 15vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+    
