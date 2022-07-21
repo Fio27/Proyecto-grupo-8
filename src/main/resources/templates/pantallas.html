@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Pantallas</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="./css/pantallas.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    </head>
+
+    <body>
+        <div class='navbarP'>
+            <img src="images/logoEmpresa.png" class='logo' alt="Es mi logo" />
+            <nav>
+                <ul>
+                    <div class="w3-bar w3-border w3-blue">
+                        <a href="home.html" class="w3-bar-item w3-button w3-padding-16">Inicio</a>
+                        <a href="pantallas.html" class="w3-bar-item w3-button w3-padding-16">Pantallas</a>
+                        <a href="computadoras.html" class="w3-bar-item w3-button w3-padding-16">Computadoras</a>
+                        <a href="celulares.html" class="w3-bar-item w3-button w3-padding-16">Celulares</a>
+                        <a href="electrodomesticos.html" class="w3-bar-item w3-button w3-padding-16">Electrodomesticos</a>
+                        <a href="muebles.html" class="w3-bar-item w3-button w3-padding-16">Muebles</a>
+                        <a href="marcas.html" class="w3-bar-item w3-button w3-padding-16">Marcas</a>
+                        <a href="contactenos.html" class="w3-bar-item w3-button w3-padding-16">Contactenos</a>
+
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+
+            <h1>Pantallas</h1>
+
+        </div>
+        <br>
+
+
+    <tbody>
+    <th:block th:each="user : ${computadoresdataset}">
+        <tr>
+
+        <div class="pantallasdataset">
+
+
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <td th:text="${user.getId}"></td>
+                    <p class="card-text">Nombre del Producto: <td th:text="${user.getNombre_Pantallas}"></td></p>
+
+                    <img th:src="${user.getImagen_Pantallas}" id="imagen" class="card-img-top"/>
+
+                    <td th:text="${user.getPrecio_Pantallas}"></td>
+
+                    <td th:text="${user.getCantidad_Pantallas}"></td>
+
+                    <td>
+                        <a th:href="@{/editProducto2/{id}(id=${user.getId})}">Edit</a>
+                    </td>
+
+                    <td>
+                        <a th:href="@{/delete/{id}(id=${user.getId})}">Delete</a>
+                    </td>
+                </div>
+            </div>
+
+        </div>
+
+    </tr> 
+</th:block>
+</tbody>
+
+</html>
