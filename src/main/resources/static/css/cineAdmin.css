@@ -2,6 +2,10 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
+/* 
+    Created on : 21 jul. 2022, 1:52:27 p. m.
+    Author     : Golcher
+*/
 *{
     margin:0;
     padding:0;
@@ -20,7 +24,7 @@ body{
     position:absolute;
 }
 
-.navbar{ 
+.navbar{
     height: 20vh;
     width: 100%;
     margin: auto;
@@ -85,7 +89,7 @@ h1{
     aling-items:center;
 }
 
-.video-content{
+.video-content{ 
     margin: 30px 10px;
     display:inline-block;
     flex-direction: column; /* Flex por default, corre los elementos de izquierda a derecha que se encuentren dentro del div, flex direction da el permiso para cambiar la direccion */
@@ -96,7 +100,6 @@ h1{
 .video-content iframe{
     margin: 20px 10px;
 }
-
 
 
 * {
@@ -125,4 +128,21 @@ body {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.cartasposc  {
+    display: inline-block;
+    margin: 40px;
+}
+
+.cartasbtn {
+    display: inline-block;
+    padding-left: 70px;
+    margin-top: 10px;
+}
+
+.card-body{
+    background-color: #015089;
+    outline-color: #015089;
+    outline-width: 1px;  
 }
