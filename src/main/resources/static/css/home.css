@@ -38,18 +38,19 @@ nav ul li a{
     margin-bottom: 15px;
     color: crimson;
     text-align: center;
+    font-family: "sans-serif"
 }
 .content p{
     font-size: 20px;
     color: midnightblue;
-    text-align: center;
+    text-align: left;
 }
 .logo {
     width: 160px;
     cursor: pointer;
 }
 .tikcets {
-    width: 1000px;
+    width: 100px;
     display:block;
     margin:auto;
 }
@@ -81,4 +82,14 @@ body {
     color: black;
 }
 
-
+.message{
+    height: 15vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.botonesRedes{
+    height: 5vh;
+}
+    
