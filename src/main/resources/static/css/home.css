@@ -67,7 +67,7 @@ body {
 }
 .topnav {
     overflow: hidden;
-    background-color: darkblue;
+    background-color: #034C8C;
 }
 .topnav a {
     float: left;
@@ -80,6 +80,9 @@ body {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+}
+body{
+    background-color: #FFFBD5
 }
 
 .message{

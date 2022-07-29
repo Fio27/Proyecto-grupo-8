@@ -6,7 +6,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     margin:0;
     padding:0;
 }
-
+.botonesRedes{
+    height: 5vh;
+}
 body{
     background-image: url(../images/fondo-azul.png);
     background-attachment: fixed;
@@ -112,7 +114,7 @@ body {
 }
 .topnav {
     overflow: hidden;
-    background-color: darkblue;
+    background-color: #034C8C;
 }
 .topnav a {
     float: left;
@@ -126,6 +128,6 @@ body {
     background-color: #ddd;
     color: black;
 }
-.botonesRedes{
-    height: 5vh;
+body{
+    background-color: #FFFBD5
 }
