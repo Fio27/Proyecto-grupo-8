@@ -12,13 +12,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     margin:0;
     padding:0;
 }
-.navbar{
-    height: 15vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
+
 nav{
     flex: 1;
     padding-left: 60px;

@@ -9,10 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .botonesRedes{
     height: 5vh;
 }
-body{
-    background-image: url(../images/fondo-azul.png);
-    background-attachment: fixed;
-}
+
 .container{
     height:100vh;
     width:100%;
@@ -34,6 +31,7 @@ body{
 .logo{
     width: 400px;
     cursor: pointer;
+    
 }
 nav{
     flex: 1;
@@ -56,7 +54,7 @@ h1{
     font-size: 35px;
     font-weight: 100;
     margin-bottom: 15px;
-    color: white;
+    color: #F59A17;
     text-align:center;
 
 }
