@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Teatro</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/teatroAdmin.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <nav>
+            <ul>
+                <div class="topnav">
+
+                    <a href="home.html">Conocenos</a>
+                    <a href="inicio.html">Home</a>
+                    <a href="conciertos.html">Concierto</a>
+                    <a href="partidos.html">Partidos</a>
+
+                    <a href="cine.html">Cine</a>
+                    <a href="login.html">Login</a>
+                    <!-- comment  <a href="informacionTiq.html">Informacion tiquete</a> comment -->
+                    <a href="historial.html">Historial</a>
+                    <a href="facturasP.html">Facturas</a>
+                    <!-- comment <a href="compra.html">Comprar</a> comment -->
+
+                </div>
+            </ul>            
+        </nav>
+
+
+
+    <tbody>
+    <th:block th:each="user : ${teatrodataset}">
+
+        <tr>
+        <div class="cartasposc">
+
+            <div class="card" border style="width: 18rem;">
+                <div class="card-body">
+
+                    <p class="card-text"><td th:text="${user.getNombre}"></td></p>
+
+                    <img th:src="${user.getImagen}" id="imagen" class="card-img-top"/>
+
+                    <div class="cartasbtn">
+                        <td>
+                            <a class="btn btn-outline-success my-2 my-sm-0 btn-sm" th:href="@{/editTeatro/{id}(id=${user.getId})}">Edit</a>
+                        </td>
+
+                        <td>
+                            <a class="btn btn-outline-danger my-2 my-sm-0 btn-sm" th:href="@{/deleteTeatro/{id}(id=${user.getId})}">Delete</a>
+                        </td> </div>
+
+                </div>
+            </div>
+        </div>
+
+    </tr> 
+</th:block>
+</tbody>
+</body>
+
+
+
+
+<footer> 
+
+</footer> 
+
+
+
+</html>

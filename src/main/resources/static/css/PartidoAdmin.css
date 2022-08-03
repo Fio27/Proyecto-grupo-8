@@ -1,7 +1,3 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
-*/
 *{
     margin:0;
     padding:0;
@@ -119,7 +115,7 @@ body {
 }
 .topnav {
     overflow: hidden;
-    background-color: #034C8C;
+    background-color: darkblue;
 }
 .topnav a {
     float: left;
@@ -133,9 +129,6 @@ body {
     background-color: #ddd;
     color: black;
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 
 .cartasposc  {
     display: inline-block;
@@ -161,15 +154,3 @@ body {
     color: #015089;
     text-align:center;
 }
-=======
->>>>>>> Stashed changes
-body{
-    background-color: #FFFBD5
-}
-.botonesRedes{
-    height: 5vh;
-}
-<<<<<<< Updated upstream
-=======
->>>>>>> ce36604c003e98f3d6dc8a87994bf6c7b4ec9231
->>>>>>> Stashed changes
