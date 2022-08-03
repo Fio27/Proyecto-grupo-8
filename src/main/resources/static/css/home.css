@@ -86,13 +86,17 @@ body{
 }
 
 .message{
-    height: 15vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+ font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    color: crimson;
+    text-align: center;
+    font-family: "sans-serif"
 }
 .botonesRedes{
     height: 5vh;
 }
-    
+
+.carousel-fade{
+    height: 15vh;
+}
