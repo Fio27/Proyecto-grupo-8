@@ -133,9 +133,6 @@ body {
     background-color: #ddd;
     color: black;
 }
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 
 .cartasposc  {
     display: inline-block;
@@ -161,15 +158,21 @@ body {
     color: #015089;
     text-align:center;
 }
-=======
->>>>>>> Stashed changes
 body{
     background-color: #FFFBD5
 }
 .botonesRedes{
     height: 5vh;
 }
-<<<<<<< Updated upstream
-=======
->>>>>>> ce36604c003e98f3d6dc8a87994bf6c7b4ec9231
->>>>>>> Stashed changes
+
+.video-content{ 
+    margin: 30px 10px;
+    display:inline-block;
+    flex-direction: column; /* Flex por default, corre los elementos de izquierda a derecha que se encuentren dentro del div, flex direction da el permiso para cambiar la direccion */
+    justify-content: center;
+    align-items: center;
+}
+
+.video-content iframe{
+    margin: 20px 20px;
+}

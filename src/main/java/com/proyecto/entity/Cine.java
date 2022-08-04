@@ -19,7 +19,10 @@ public class Cine implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nombre;
-    private int anio;
+    private String fecha;
+    private String hora;
+    private String ubicacion;
+    private String descripcion;
     private String imagen;
 
     public long getId() {
@@ -38,12 +41,36 @@ public class Cine implements Serializable {
         this.nombre = nombre;
     }
 
-    public int getAnio() {
-        return anio;
+    public String getFecha() {
+        return fecha;
     }
 
-    public void setAnio(int anio) {
-        this.anio = anio;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public String getImagen() {

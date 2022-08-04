@@ -31,64 +31,58 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             <div class="col-sm-10">
                                 <input type="text" class="form-control form-control-sm col-md-6" th:field="*{id}" placeholder= "Id Pelicula" id="id" aria-describedby="emailHelp">
                             </div>
--->
+                        -->
+
+                        <div class="form-group mb-3 row">
+                            <label class="col-md-2 col-form-label" for="nombre">Nombre</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control form-control-sm col-md-6" th:field="*{nombre}" placeholder= "Nombre de la obra de teatro:" id="nombres" aria-describedby="emailHelp">
+                            </div>
+
 
                             <div class="form-group mb-3 row">
-                                <label class="col-md-2 col-form-label" for="nombre">Nombre</label>
+                                <label class="form-control-sm col-form-label col-md-2" for="fecha">Fecha de la Obra:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control form-control-sm col-md-6" th:field="*{nombre}" placeholder= "Nombre de la obra de teatro:" id="nombres" aria-describedby="emailHelp">
+                                    <input type="text" th:field="*{fecha}" class="form-control form-control-sm col-md-6" placeholder= "fecha" id="fecha" aria-describedby="emailHelp">
                                 </div>
-
-
-                                <div class="form-group mb-3 row">
-                                    <label class="form-control-sm col-form-label col-md-2" for="fecha">Fecha de la Obra:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" th:field="*{fecha}" class="form-control form-control-sm col-md-6" placeholder= "fecha" id="fecha" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-
-                                <div class="form-group mb-3 row">
-                                    <label class="form-control-sm col-form-label col-md-2" for="hora">Hora de la Obra:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" th:field="*{hora}" class="form-control form-control-sm col-md-6" placeholder= "hora" id="hora" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-
-                                <div class="form-group mb-3 row">
-                                    <label class="form-control-sm col-form-label col-md-2" for="ubicacion">Ubicacion de la Obra:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" th:field="*{ubicacion}" class="form-control form-control-sm col-md-6" placeholder= "ubicacion" id="ubicacion" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-
-                                <div class="form-group mb-3 row">
-                                    <label class="form-control-sm col-form-label col-md-2" for="descripcion">Descripcion de la Obra:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" th:field="*{descripcion}" class="form-control form-control-sm col-md-6" placeholder= "descripcion" id="descripcion" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group mb-3 row">
-                                    <label class="form-control-sm col-form-label col-md-2" for="imagen">Ruta de la imagen:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" th:field="*{imagen}" class="form-control form-control-sm col-md-6" placeholder= "imagen" id="imagen" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-
-                                <td>
-
-                                    <!-- <label class="form-control-sm col-form-label col-md-2" for="imagen">Imagen</label>
-                                     <input type="text" name="file" th:field="*{imagen}"/>-->
-
-
-                                    <button type="submit" class="btn btn-primary" value="Guardar">Submit</button>
-                                </td>
-
-
-
- 
                             </div>
+
+                            <div class="form-group mb-3 row">
+                                <label class="form-control-sm col-form-label col-md-2" for="hora">Hora de la Obra:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" th:field="*{hora}" class="form-control form-control-sm col-md-6" placeholder= "hora" id="hora" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3 row">
+                                <label class="form-control-sm col-form-label col-md-2" for="ubicacion">Ubicacion de la Obra:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" th:field="*{ubicacion}" class="form-control form-control-sm col-md-6" placeholder= "ubicacion" id="ubicacion" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3 row">
+                                <label class="form-control-sm col-form-label col-md-2" for="descripcion">Descripcion de la Obra:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" th:field="*{descripcion}" class="form-control form-control-sm col-md-6" placeholder= "descripcion" id="descripcion" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mb-3 row">
+                                <label class="form-control-sm col-form-label col-md-2" for="imagen">Ruta de la imagen:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" th:field="*{imagen}" class="form-control form-control-sm col-md-6" placeholder= "imagen" id="imagen" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+
+                            <td>
+
+
+                                <button type="submit" class="btn btn-primary" value="Guardar">Submit</button>
+                            </td>
+
+                        </div>
 
                     </form>    
                 </div>
@@ -97,7 +91,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
             </div>
         </div>
-
 
 
     </body>

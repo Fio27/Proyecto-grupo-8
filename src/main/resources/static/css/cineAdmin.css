@@ -12,7 +12,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 body{
-    background-image: url(../images/fondo-azul.png);
     background-attachment: fixed;
 }
 .container{
@@ -145,7 +144,7 @@ body{
 }
 
 .card-body{
-    background-color: #015089;
+    background-color: #034C8C;
     outline-color: #015089;
     outline-width: 1px;  
 }

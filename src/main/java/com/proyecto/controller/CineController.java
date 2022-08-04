@@ -26,7 +26,7 @@ public class CineController {
     @Autowired
     private ICineService cineService;
 
-    @GetMapping("/cineAdmin") 
+    @GetMapping("/cineAdmin")
     public String index(Model model) {
         List<Cine> listaCine = cineService.getAllCine();
         model.addAttribute("titulo", "Tabla Cine");
@@ -38,7 +38,7 @@ public class CineController {
     public String crearCine(Model model) {
         List<Cine> listaCine = cineService.getAllCine();
         model.addAttribute("cinedataset", new Cine());
-        return "crear";
+        return "crear_Cine";
     }
 
     @PostMapping("/save")
@@ -47,17 +47,25 @@ public class CineController {
         return "redirect:/cineAdmin";
     }
 
-    @GetMapping("/editCine/{id}") 
+    @GetMapping("/editCine/{id}")
     public String editarCine(@PathVariable("id") Long id, Model model) {
         Cine cine = cineService.getCineById(id);
         List<Cine> listaCine = cineService.getAllCine();
         model.addAttribute("cinedataset", cine);
-        return "crear";
+        return "crear_Cine";
     }
 
     @GetMapping("/delete/{id}") //eliminar elemento
     public String eliminarCine(@PathVariable("id") Long id) {
         cineService.delete(id);
         return "redirect:/cineAdmin";
+    }
+
+    @GetMapping("/cines")
+    public String index2(Model model) {
+        List<Cine> listaCine = cineService.getAllCine();
+        model.addAttribute("titulo", "Tabla Cine");
+        model.addAttribute("cinedataset", listaCine);
+        return "cine";
     }
 }
