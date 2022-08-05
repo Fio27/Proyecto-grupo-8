@@ -15,23 +15,23 @@
 
 .contenido h4{
     font-size: 20px; 
-    font-weight: 80; 
-    margin-top: 210px; 
+    font-weight: 80;  
     color: black;
 }
 
 .feature-img{
     height: 30%;
-    position: absolute;
-    bottom: 210px;
-    right: 980px; 
+    position: relative;
+    bottom: 0px;
+    right: 0px; 
        
 }
 .second-img{
     height: 24%;
-    position: absolute;
-    bottom: 10px;
-    right: 980px; 
+    width: 30%;
+    position: relative;
+    bottom: 0px;
+    right: 0px; 
 }
 
 .logo{
