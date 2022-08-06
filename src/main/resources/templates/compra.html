@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="plantilla/template::head"></head>  
+    <link rel="stylesheet" href="css/compra.css">
+    <body>
+        <div class="container"> 
+
+            <!-- esta va a ser la barra de navegacion /Este DIV es nuestro NAVBAR = navigation bar -->
+
+            <div class='navbar'>
+                <header th:replace="plantilla/template::header"></header>
+            </div>
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Area</label>
+                    <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Evento</label>
+                    <input type="text" class="form-control" id="inputAddress" >
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Correo</label>
+                    <input type="text" class="form-control" id="inputAddress2" >
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Método de Pago </label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Monto</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Comprar</button>
+                </div>
+                
+            </form>
+</div>
+    </body>
+    <!-- footer=pie de pagina -->
+        <footer th:replace="plantilla/template::footer"></footer>
+</html>
