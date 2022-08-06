@@ -37,6 +37,7 @@ nav ul li a{
     margin-bottom: 15px;
     color: crimson;
     text-align: center;
+    font-family: "sans-serif"
 }
 
 .content p{
@@ -87,3 +88,4 @@ body{
 .botonesRedes{
     height: 5vh;
 }
+
