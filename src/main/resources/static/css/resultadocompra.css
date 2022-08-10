@@ -1,0 +1,17 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 9, 2022, 9:13:21 PM
+    Author     : Fio
+*/
+.container{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 15px;
+    color: crimson;
+    text-align: center;
+    font-family: "sans-serif"
+}
+
