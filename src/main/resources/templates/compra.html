@@ -8,29 +8,51 @@
 
             <!-- esta va a ser la barra de navegacion /Este DIV es nuestro NAVBAR = navigation bar -->
 
-                <header th:replace="plantilla/template::header"></header>
-         
+            <header th:replace="plantilla/template::header"></header>
+
 
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Cantidad</label>
                     <input type="number" class="form-control" id="inputEmail4">
                 </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Area</label>
-                    <input type="text" class="form-control" id="inputPassword4">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Evento
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Coldplay</a></li>
+                        <li><a class="dropdown-item" href="#">Slayer</a></li>
+                        <li><a class="dropdown-item" href="#">Metallica</a></li>
+                        <li><a class="dropdown-item" href="#">Hamlet</a></li>
+                        <li><a class="dropdown-item" href="#">Cascanueces</a></li>
+                        <li><a class="dropdown-item" href="#">Liga-Saprissa</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Método de Pago
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Tarjeta de crédito</a></li>
+                        <li><a class="dropdown-item" href="#">Tarjeta de débito</a></li>
+                    </ul>
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Evento</label>
+                    <label for="inputAddress" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="inputAddress" >
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Correo</label>
+                    <label for="inputAddress2" class="form-label">Número de tarjeta</label>
                     <input type="text" class="form-control" id="inputAddress2" >
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Método de Pago </label>
+                    <label for="inputCity" class="form-label">Expiración </label>
                     <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="inputZip">
                 </div>
                 <div class="col-md-2">
                     <label for="inputZip" class="form-label">Monto</label>
@@ -40,10 +62,10 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Comprar</button>
                 </div>
-                
+
             </form>
-</div>
+        </div>
     </body>
     <!-- footer=pie de pagina -->
-        <footer th:replace="plantilla/template::footer"></footer>
+    <footer th:replace="plantilla/template::footer"></footer>
 </html>
