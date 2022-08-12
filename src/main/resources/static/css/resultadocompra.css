@@ -6,5 +6,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Created on : Aug 9, 2022, 9:13:21 PM
     Author     : Fio
 */
+.navbar{
+    height: 15vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
 
-
+.botonesRedes{
+    height: 5vh;
+}
