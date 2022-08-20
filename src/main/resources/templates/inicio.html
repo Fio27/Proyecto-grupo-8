@@ -5,7 +5,7 @@
 
     <body>
 
-        <h1 style="font-size:90px;width: 100%; text-align: center">Bienvenidos a Good Times </h1>
+        <h1 th:text="#{plantilla.inicio}" style="font-size:90px;width: 100%; text-align: center"></h1>
 
         <header th:replace="plantilla/template::header"></header>
 
@@ -13,10 +13,10 @@
 
 
     <div class="message">
-
+ 
         <div aria-live="polite" aria-atomic="true" class="position-relative">
             <div class="toast-body text-center">
-                Actividades del momento
+                <h1 th:text="#{plantilla.itext}"></h1>
             </div>
 
             <!-- Position it: -->
