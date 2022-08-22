@@ -29,9 +29,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         <div class="card-body">
 
                             <p class="card-text"><td th:text="${user.getNombre}"></td></p>
+                            <p class="card-text"><td th:text="${user.getFecha}"></td></p>
+                            <p class="card-text"><td th:text="${user.getUbicacion}"></td></p>
+                            <p class="card-text"><td th:text="${user.getHora}"></td></p>
 
                             <img th:src="${user.getImagen}" id="imagen" class="card-img-top"/>
-
+                            <p class="card-text"><td th:text="${user.getDescripcion}"></td></p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +44,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </tbody>  
     </div>
 
-<footer th:replace="plantilla/template::footer"></footer>
+    <footer th:replace="plantilla/template::footer"></footer>
 
 
 </body>
