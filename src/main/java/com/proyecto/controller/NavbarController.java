@@ -60,4 +60,11 @@ public class NavbarController {
         return "resultadocompra";
     }
 
+    @GetMapping("/admin")
+    public String index7(Model model) {
+        // List<Concierto> listaConcierto = conciertoService.getAllConcierto();
+        // model.addAttribute("titulo", "Tabla Concierto");
+        //model.addAttribute("conciertodataset", listaConcierto);
+        return "admin";
+    }
 }

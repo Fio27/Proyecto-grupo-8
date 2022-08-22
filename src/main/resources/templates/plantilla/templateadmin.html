@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <header th:fragment="adminheader">
+
+        <nav>
+            <ul>
+                <div class="topnav">
+                    <a>ADMIN</a>
+                    <a th:href="@{/home}" th:text="#{articulo.home}">Conocenos</a>
+                    <a th:href="@{/inicio}">Home</a>
+                    <a th:href="@{/conciertoAdmin}" th:text="#{articulo.conciertos}">Concierto</a>
+                    <a th:href="@{/partidoAdmin}" th:text="#{articulo.partidos}">Partidos</a>
+                    <a th:href="@{/teatroAdmin}" th:text="#{articulo.teatro}">Teatro</a>
+                    <a th:href="@{/cineAdmin}" th:text="#{articulo.cine}">Cine</a>
+                    <a th:href="@{/historiales}" th:text="#{articulo.historiales}">Historial</a>
+                    <a th:href="@{/compras}" th:text="#{articulo.compra}">Compras</a>
+                    <a th:href="@{/login}">Login</a>
+
+                </div>
+            </ul>            
+        </nav>
+    </header>
+    
+    <body>
+        <div>TODO write content</div>
+    </body>
+    
+</html>

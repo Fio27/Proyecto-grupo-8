@@ -70,18 +70,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter { //Da acceso a
         .hasAnyRole("USER", "VENDEDOR", "ADMIN") 
         .anyRequest().authenticated() 
         .and() 
-        .formLogin(); 
+        .formLogin();  
          */
 
         http.authorizeRequests()
-                .antMatchers("/concierto", "/login")                                          //Permiso de poder ir a 
-                .hasRole("ADMIN")                                                           //Si tiene el rol de "ADMIN"
-                .antMatchers("/conciertoN", "/login", "/partido")                       //Quiero que pueda ir a "/home", "/".... 
-                .hasAnyRole("USER", "ADMIN")                                    //Si tiene el rol de "USER"
+                .antMatchers("/admin", "/login", "/cine","/historiales", "/compras", "/home", "/inicio", "/resCompra", "/cineAdmin", "/conciertoAdmin", "/partidoAdmin", "/teatroAdmin", "/teatro", "/partidos", "/conciertos", "/cines", "/cineN", "/conciertoN", "/partidoN", "/teatroN")                                         //Permiso de poder ir a 
+                .hasRole("ADMIN")                                                            //Si tiene el rol de "ADMIN"
+                .antMatchers("/login", "/cine","/historiales", "/compras", "/home", "/inicio", "/resCompra", "/teatro", "/partidos", "/conciertos", "/cines")                             //Quiero que pueda ir a "/home", "/".... 
+                .hasAnyRole("USER", "ADMIN")                                                 //Si tiene el rol de "USER"
                 .anyRequest().authenticated()                                               
                 .and()
                 .formLogin()
-                .loginPage("/login").permitAll().defaultSuccessUrl("/home", true);       //A cual ruta dirije el login y si es valido redirijalo a "/home".
+                .loginPage("/login").permitAll().defaultSuccessUrl("/home", true);           //A cual ruta dirije el login y si es valido redirijalo a "/home".
     }
 //E1 siguiente metodo funciona parsa realizar la autorización de accesos 
 //i18n 
