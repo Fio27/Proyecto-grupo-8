@@ -74,9 +74,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter { //Da acceso a
          */
 
         http.authorizeRequests()
-                .antMatchers("/admin", "/login", "/cine","/historiales", "/compras", "/home", "/inicio", "/resCompra", "/cineAdmin", "/conciertoAdmin", "/partidoAdmin", "/teatroAdmin", "/teatro", "/partidos", "/conciertos", "/cines", "/cineN", "/conciertoN", "/partidoN", "/teatroN")                                         //Permiso de poder ir a 
+                .antMatchers("/admin", "/login", "/cine","/historiales","/compraR","/compras", "/home", "/inicio", "/resCompra", "/cineAdmin", "/conciertoAdmin", "/partidoAdmin", "/teatroAdmin", "/teatro", "/partidos", "/conciertos", "/cines", "/cineN", "/conciertoN", "/partidoN", "/teatroN")                                         //Permiso de poder ir a 
                 .hasRole("ADMIN")                                                            //Si tiene el rol de "ADMIN"
-                .antMatchers("/login", "/cine","/historiales", "/compras", "/home", "/inicio", "/resCompra", "/teatro", "/partidos", "/conciertos", "/cines")                             //Quiero que pueda ir a "/home", "/".... 
+                .antMatchers("/login", "/cine","/historiales", "/compraR", "/compras", "/home", "/inicio", "/resCompra", "/teatro", "/partidos", "/conciertos", "/cines")                             //Quiero que pueda ir a "/home", "/".... 
                 .hasAnyRole("USER", "ADMIN")                                                 //Si tiene el rol de "USER"
                 .anyRequest().authenticated()                                               
                 .and()

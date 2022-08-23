@@ -28,14 +28,6 @@ public class NavbarController {
         return "historial";
     }
 
-    @GetMapping("/compras")
-    public String index2(Model model) {
-        // List<Concierto> listaConcierto = conciertoService.getAllConcierto();
-        // model.addAttribute("titulo", "Tabla Concierto");
-        //model.addAttribute("conciertodataset", listaConcierto);
-        return "compra";
-    }
-
     @GetMapping("/home")
     public String index3(Model model) {
         // List<Concierto> listaConcierto = conciertoService.getAllConcierto();

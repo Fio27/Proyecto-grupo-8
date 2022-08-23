@@ -10,62 +10,75 @@
 
             <header th:replace="plantilla/template::header"></header>
 
+            <form th:object = "${compradataset}"
+                  th:action="@{/saveCompra}"
+                  method="POST" >
+                <br><br><br> 
+                <div class="col-md-4">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="number" th:field="*{cantidad}" class="form-control" id="cantidad" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="area" class="form-label">Lugar de Evento</label>
+                    <input type="text" th:field="*{area}" class="form-control" id="area" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
 
-            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="evento" class="form-label">Evento</label>
+                    <!-- <div class="input-group has-validation">-->
+                    <input type="text" th:field="*{evento}" class="form-control" id="evento" required value="default">
+                    <div class="invalid-feedback">
+                        Por favor seleccione un evento.
+                    </div>
+                    <!--</div>-->
+                </div>
+
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" id="inputEmail4">
+                    <label for="monto" class="form-label">Monto</label>
+                    <input type="text" th:field="*{monto}" class="form-control" id="monto" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Evento
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Coldplay</a></li>
-                        <li><a class="dropdown-item" href="#">Slayer</a></li>
-                        <li><a class="dropdown-item" href="#">Metallica</a></li>
-                        <li><a class="dropdown-item" href="#">Hamlet</a></li>
-                        <li><a class="dropdown-item" href="#">Cascanueces</a></li>
-                        <li><a class="dropdown-item" href="#">Liga-Saprissa</a></li>
-                    </ul>
+                <div class="col-md-3">
+                    <label for="tarjeta" class="form-label">Ingrese su Número de Tarjeta</label>
+                    <input type="text" class="form-control" th:field="*{tarjeta}" id="tarjeta" required>
+                    </input>
+                    <div class="invalid-feedback">
+                        Por favor ingrese el número de su tarjeta.
+                    </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Método de Pago
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Tarjeta de crédito</a></li>
-                        <li><a class="dropdown-item" href="#">Tarjeta de débito</a></li>
-                    </ul>
+                <div class="col-md-3">
+                    <label for="cvv" class="form-label">Ingrese su CVV</label>
+                    <input type="password" th:field="*{cvv}" class="form-control" id="cvv" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputAddress" >
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Acepto los términos de privacidad
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Número de tarjeta</label>
-                    <input type="text" class="form-control" id="inputAddress2" >
+                    <button class="btn btn-primary" type="submit">Comprar</button>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Expiración </label>
-                    <input type="date" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">CVV</label>
-                    <input type="password" class="form-control" id="inputZip">
-                </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Monto</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Comprar</button>
-                </div>
-
-            </form>
-        </div>
+            </form>  
     </body>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- footer=pie de pagina -->
     <footer th:replace="plantilla/template::footer"></footer>
 </html>
